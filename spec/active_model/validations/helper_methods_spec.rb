@@ -5,7 +5,7 @@ describe ActiveModel::Validations::HelperMethods do
     include ActiveModel::Dirty
     include ActiveModel::Validations
 
-    define_attribute_methods :name
+    define_attribute_methods [:name]
 
     def initialize
       @name = nil
@@ -36,6 +36,11 @@ describe ActiveModel::Validations::HelperMethods do
 
     def new_record?
       @new_record
+    end
+
+    def changes_applied
+      @previously_changed = changes
+      @changed_attributes = ActiveSupport::HashWithIndifferentAccess.new
     end
   end
 
