@@ -9,7 +9,6 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Peter Marsh"]
   spec.email         = ["pete.d.marsh@gmail.com"]
   spec.summary       = "A validator for ActiveModels that checks that attributes have not been modified since the last time the model was saved."
-  spec.description   = %q{TODO: Write a longer description. Optional.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
