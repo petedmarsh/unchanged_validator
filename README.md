@@ -1,5 +1,7 @@
 # UnchangedValidator
 
+[![Build Status](https://travis-ci.org/petedmarsh/unchanged_validator.png)](https://travis-ci.org/petedmarsh/unchanged_validator)
+
 A validator for ActiveModels that checks that attributes have not been
 modified since the last time the model was saved.
 
