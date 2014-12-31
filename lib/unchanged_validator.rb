@@ -1,5 +1,5 @@
+require "unchanged_validator/engine" if defined?(Rails)
 require "active_model/validations/unchanged_validator"
-require 'active_support/i18n'
 require "unchanged_validator/version"
 
 module UnchangedValidator

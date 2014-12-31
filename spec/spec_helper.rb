@@ -20,7 +20,7 @@ require 'active_support'
 require 'active_model'
 require 'unchanged_validator'
 
-I18n.load_path += Dir[File.expand_path(File.join(File.dirname(__FILE__), '../locales', '*.yml')).to_s]
+I18n.load_path += Dir[File.expand_path(File.join(File.dirname(__FILE__), '../config/locales', '*.yml')).to_s]
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
