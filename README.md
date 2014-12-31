@@ -89,7 +89,7 @@ UnchangedValidator supports all of the common `ActiveModel::Validations` options
 class Book < ActiveRecord::Base
   validates_unchanged :title, allow_blank: true
   validates_unchanged :author, allow_nil: true
-  validates_unchanged :copyright_expirty_date, if: same_edition?
+  validates_unchanged :copyright_expirty_date, if: :same_edition?
   validates_unchanged :published_date, message: 'cannot be re-released'
   validates_unchanged :foreward, on: :update
   validates_unchanged :publisher, unless: :rebranded?
