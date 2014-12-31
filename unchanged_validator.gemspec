@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Peter Marsh"]
   spec.email         = ["pete.d.marsh@gmail.com"]
   spec.summary       = "A validator for ActiveModels that checks that attributes have not been modified since the last time the model was saved."
-  spec.homepage      = ""
+  spec.homepage      = "https://github.com/petedmarsh/unchanged_validator"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
